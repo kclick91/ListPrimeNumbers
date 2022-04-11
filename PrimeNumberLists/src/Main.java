@@ -13,7 +13,7 @@ public class Main {
         lists.add(new ArrayList<>());
         lists.get(0).add(2);
         //list primes up to stopping point
-        int stoppingPoint = 50;
+        int stoppingPoint = 100;
         int numberOfLists = 1;
         while (count < stoppingPoint)
         {
@@ -40,6 +40,15 @@ public class Main {
             }
             count = count + 1;
         }
+        for(int i = 0; i < numberOfLists; i++)
+        {
+            for (int j = 0; j < lists.get(i).size(); j++)
+            {
+                System.out.print(lists.get(i).get(j) + " ");
+            }
+            System.out.println();
+        }
 
     }
+
 }
